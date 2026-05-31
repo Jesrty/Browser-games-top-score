@@ -1,1 +1,39 @@
+Play a game and find the post request that send the highscore (see exsample below)
+The "Digest" is a b64encode(fromhex(sha256(json)))
+So just change the json to what you want and calculate the digest and resend the request with the update values
 
+
+### Cyberchef recipe for my exsample:
+https://gchq.github.io/CyberChef/#recipe=SHA2('256',64,160)From_Hex('Auto')To_Base64('A-Za-z0-9%2B/%3D')&input=eyJzY29yZSI6Njk0MjAsInNlc3Npb25JZCI6IjZhNmI5MjA5LTM3Y2UtNGU0OS1hMzRlLTViMmRjMzdlMmI5ZCIsImNsaWVudFBsYXllcklkIjoiMzIxNDFhZWYtZjdhMy00YzhlLTlmZGItZWU1ZTZjY2QxYmIwIiwibG9jYXRpb24iOiJodHRwczovL2h0bWwtY2xhc3NpYy5pdGNoLnpvbmUvaHRtbC83MjkxMzU4L0ZydWl0RnJlbnp5LTEuMC41L2luZGV4Lmh0bWwiLCJwbGF5ZXJOYW1lIjoiSmVzcnR5In0&oeol=CR
+
+
+### Post request for sumbinting highscore:
+
+POST /play/game/55323cbb-9c82-43d9-a08e-b998ba762766/leaderboard/3e48ec4d-5f9b-4ebb-a206-a7d9cf6e5262/entry HTTP/2
+Host: api.gdevelop.io
+Content-Length: 230
+Sec-Ch-Ua-Platform: "Windows"
+Digest: rNXTKYtmezgRIdrn0v79YV6FMvvWh81HjULTMFjVkVw=
+Accept-Language: da-DK,da;q=0.9
+Sec-Ch-Ua: "Not-A.Brand";v="24", "Chromium";v="146"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: */*
+Origin: https://html-classic.itch.zone
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://html-classic.itch.zone/
+Accept-Encoding: gzip, deflate, br
+Priority: u=1, i
+
+{
+
+    score: 69420,
+    sessionId: "6a6b9209-37ce-4e49-a34e-5b2dc37e2b9d",
+    clientPlayerId: "32141aef-f7a3-4c8e-9fdb-ee5e6ccd1bb0",
+    location: https://html-classic.itch.zone/html/7291358/FruitFrenzy-1.0.5/index.html,
+    playerName: "Jesrty"
+
+}
