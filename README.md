@@ -25,3 +25,9 @@ Some of them have mulitple games and the difficulty verries
 * https://fluby.com/game/hextris/
 * https://lockpickup.itch.io/stack-merge
 * https://retroplayarena.com/leaderboard
+
+
+### Tools used
+
+* Burp Suite
+* Cyberchef
