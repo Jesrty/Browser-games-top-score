@@ -3,7 +3,7 @@
 In this Github i'll post how to get the top score in random browser games.
 Some of them have mulitple games and the difficulty verries 
 
-###List of games and date of compleasion 
+### List of games and date of compleasion 
 
 * Fruit-frenzy,   2026/05/26,   https://velvet-games.itch.io/fruit-frenzy
 * Stack Rush,     2026/05/26,   https://tglgames.com/stack-rush/
@@ -15,7 +15,7 @@ Some of them have mulitple games and the difficulty verries
 * polytrack       2025/--/--    https://www.kodub.com/apps/polytrack   (only like top 10 done, not first place)
 
 
-###List of games not looked at yet
+### List of games not looked at yet
 
 * Dial-Up Dash,                 https://www.nostalgiax.com/  (only local leaderboard)
 * block-puzzle-master           https://www.crazygames.com/game/block-puzzle-master
