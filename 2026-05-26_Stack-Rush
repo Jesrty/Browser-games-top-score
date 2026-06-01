@@ -1,0 +1,342 @@
+URL: https://tglgames.com/stack-rush/
+
+0. game token = "run_token"
+1. as always, i find the post request from a test run and use it as a template
+2. The game verifies the game token, time, and by "replaying" the "move_log" and compare to result
+  2a. When you start a game, you receive a game token, you need to use it for your post request. (The game token also contain a "s" which is a epoch time it use and check as well, but because you use legit game token it doesn't really matter)
+  2b. "duration_ms" and "t" in the last "move_log" should be the same and you have to actually wait that time before sending the request after starting the game. e.g. if "duration_ms" is 20000, start the game, wait 20 sec and send the post request
+  2c. I just took the first move from my "move_log" copied it a lot of times (you don't need to update the time field) and updated the "blocks_placed", "highest_stack", "perfect_drops", "longest_combo" and "input_pointer"
+3. if you send this now, you will still get an error response, but the error will tell you the mistakes, e.g. it will display your score calculated from the "move_log" and the other fields, i just did it over and updated the score with the correct calculated one. (you can ofc also calculate it your self if you want)
+
+
+
+Post request for submitting high score:
+
+POST /api/run/submit HTTP/2
+Host: tglgames.com
+Cookie: sid=[[[I REMOVED MY COOKIE SID]]]; csrf=[[[I REMOVED MY COOKIE csrf]]]; u=Jesrty
+Content-Length: 2221
+Sec-Ch-Ua-Platform: "Windows"
+X-Csrf-Token: [[[I REMOVED MY COOKIE X-Csrf-Token]]]
+Accept-Language: da-DK,da;q=0.9
+Sec-Ch-Ua: "Not-A.Brand";v="24", "Chromium";v="146"
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: application/json
+Content-Type: application/json
+Origin: https://tglgames.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://tglgames.com/stack-rush/
+Accept-Encoding: gzip, deflate, br
+Priority: u=1, i
+
+{
+
+    run_token: "eyJnIjoic3RhY2stcnVzaCIsInUiOjU5NywicyI6MTc3OTgyNjg4MDUzMywibiI6ImM2MzNkNWY4NjhhZDA0YzgiLCJkIjo5NjIxNzY1NDAsInIiOiJ2YW5pbGxhIn0.e7d5a2b8d497e754d9fa53ea59bdc00d55af73e9da88882a6189868481777c66",
+    score: 9195,
+    duration_ms: 20000,
+    move_log: [
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 2508,
+            x: 497,
+            perfect: 1
+        },
+        {
+            t: 6041,
+            x: 487,
+            perfect: 1
+        },
+        {
+            t: 8572,
+            x: 484,
+            perfect: 1
+        },
+        {
+            t: 11149,
+            x: 534,
+            perfect: 0
+        },
+        {
+            t: 16499,
+            x: 273,
+            perfect: 0
+        },
+        {
+            t: 20000,
+            x: 693,
+            perfect: 0
+        }
+    ],
+    blocks_placed: 57,
+    highest_stack: 57,
+    perfect_drops: 55,
+    longest_combo: 55,
+    level_reached: 1,
+    death_reason: "miss",
+    input_key: 0,
+    input_pointer: 58,
+    input_dpad: 0
+
+}
