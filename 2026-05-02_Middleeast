@@ -1,0 +1,31 @@
+URL: https://www.siljo-planet.net/game/middleeast
+
+
+1. This is very easy, just complete the game, find the "gscore" & "score" and change them to the same value and resend the POST request.
+
+
+Post request for submitting high score:
+
+POST /index.php?act=Arcade&do=newscore HTTP/2
+Host: www.siljo-planet.net
+Cookie: [[[I REMOVED MY COOKIE Cookie]]]
+Content-Length: 377
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Not-A.Brand";v="24", "Chromium";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "Windows"
+Accept-Language: da-DK,da;q=0.9
+Origin: https://www.siljo-planet.net
+Content-Type: application/x-www-form-urlencoded
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: https://www.siljo-planet.net/game/middleeast
+Accept-Encoding: gzip, deflate, br
+Priority: u=0, i
+
+GeographyGame=%5Btype+Function%5D&GEOGRAPHY_GAME_PAUSED=32&GEOGRAPHY_GAME_INCORRECT_ANSWER=16&GEOGRAPHY_GAME_CORRECT_ANSWER=8&GEOGRAPHY_GAME_WAITING_FOR_USER=4&GEOGRAPHY_GAME_DISPLAYING_REGION=2&GEOGRAPHY_GAME_NULL=0&setColor=%5Btype+Function%5D&gscore=69420&gname=middleeast&score=69420&%24version=LNX+32%2C0%2C0%2C0&instance19=_level0.instance19&instance18=_level0.instance18
