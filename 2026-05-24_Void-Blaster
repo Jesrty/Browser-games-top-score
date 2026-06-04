@@ -1,0 +1,31 @@
+URL: https://www.voltcade.com/games/void-blaster
+
+0. This website have multiple games, they are all the same, so you might see some game name mixup here :)
+1. this is very easy, just change the "score" and you can resend the post, from your submission. 
+
+Post request for submitting high score:
+
+POST /api/scores HTTP/2
+Host: www.voltcade.com
+Cookie: ---Blanked out---
+Content-Length: 58
+Sec-Ch-Ua-Platform: "Windows"
+Accept-Language: da-DK,da;q=0.9
+Sec-Ch-Ua: "Not-A.Brand";v="24", "Chromium";v="146"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: */*
+Origin: https://www.voltcade.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://www.voltcade.com/games/meteor-dodge
+Accept-Encoding: gzip, deflate, br
+Priority: u=1, i
+
+{
+    gameSlug: "meteor-dodge",
+    initials: "JES",
+    score: 69420
+}
