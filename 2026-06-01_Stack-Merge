@@ -1,0 +1,44 @@
+URL: https://lockpickup.itch.io/stack-merge
+
+1. this is very easy, just change the "p_score" and you can resend the post, from your submission. 
+
+
+Post request for submitting high score:
+
+POST /rest/v1/rpc/submit_leaderboard_score_expanded HTTP/2
+Host: uoltymettcmvwrnchyja.supabase.co
+Content-Length: 288
+Sec-Ch-Ua-Platform: "Windows"
+Authorization: [[[I REMOVED MY Authorization]]]
+Accept-Language: da-DK,da;q=0.9
+Sec-Ch-Ua: "Not-A.Brand";v="24", "Chromium";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Prefer: return=minimal
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Content-Type: application/json
+Apikey: [[[I REMOVED MY Apikey]]]
+Accept: */*
+Origin: https://html-classic.itch.zone
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://html-classic.itch.zone/
+Accept-Encoding: gzip, deflate, br
+Priority: u=1, i
+
+{
+
+    p_blocks_stacked: 59,
+    p_blocks_trashed: 0,
+    p_bombs_exploded: 0,
+    p_device_id: "33b60993-2f7d-439e-8b3c-4b9da93b25c6",
+    p_display_name: "Jesrty",
+    p_gold_earned: 22,
+    p_gold_end: 22,
+    p_leaderboard_key: "global",
+    p_pickaxes_used: 0,
+    p_score: 6942069,
+    p_submission_version: 1,
+    p_swaps_used: 0
+
+}
