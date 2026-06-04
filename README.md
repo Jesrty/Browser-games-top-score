@@ -5,6 +5,7 @@ Some of them have mulitple games and the difficulty verries
 
 ### List of games and date of compleasion 
 
+* Stack Merge,    2026/06/01,   https://lockpickup.itch.io/stack-merge
 * Fruit-frenzy,   2026/05/26,   https://velvet-games.itch.io/fruit-frenzy
 * Stack Rush,     2026/05/26,   https://tglgames.com/stack-rush/
 * Middleeast,     2026/05/25,   https://www.siljo-planet.net/game/middleeast
