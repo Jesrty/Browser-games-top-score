@@ -1,0 +1,209 @@
+URL: https://www.sinful.dk/games/hit-the-clit
+
+0. so my notes for this are kinda messy and i don't want to update them so, ill jsut put some random stuff here.
+1. I remeber you need to find the secret for the JWT, its send with the request, also the score board taking down highscores after some time. 
+2. update id, token and score in the json
+
+random notes:
+
+here is the json it sends, with some stuff removed/cahnged:
+
+{
+
+    917596: "Jesrty_more_then_16",
+    917597: "notMyMail@email.com",
+    917598: "",
+    917599: "",
+    917600: "",
+    917601: "",
+    id: "1222602236",
+    token: "8ca3cb354e8cd08c122d2222333324381da0ab9cc17d222233337c9347034d9f",
+    mobile: "0",
+    tablet: "0",
+    desktop: "1",
+    session_id: "cc4b7aaa-9caa-47aa-81fd-1c06ab40aaaa",
+    metrics: {
+        score: 69,
+        timeused: 28,
+        timeused_ms: 28005,
+        timeleft: 2
+    },
+    won: "0",
+    created_from_url: https://www.sinful.dk/games/hit-the-clit?tryagain=true,
+    pages: [
+        1895611,
+        1895611
+    ],
+    page: "1895611"
+
+}
+
+
+
+some python scripts, can't remeber witch one worked well :)
+___________________________________________________________________
+import base64
+import urllib.parse
+import json
+import hmac
+import hashlib
+
+
+def b64url_encode(data: bytes) -> str:
+    return base64.urlsafe_b64encode(data).decode().rstrip("=")
+
+
+def create_jwt(payload_json_str, secret="your_secret_key"):
+    # 1. Fixed header
+    header = {"typ": "JWT", "alg": "HS512"}
+
+    # 2. Encode header (JSON → bytes → base64url)
+    header_b64 = b64url_encode(json.dumps(header).encode())
+
+    # 3. URL-encode your raw JSON string
+    url_encoded_payload = urllib.parse.quote(payload_json_str)
+
+    # 4. Base64url encode URL-encoded payload
+    payload_b64 = b64url_encode(url_encoded_payload.encode())
+
+    # 5. Create REAL HS512 signature
+    signing_input = f"{header_b64}.{payload_b64}".encode()
+    signature = hmac.new(secret.encode(), signing_input, hashlib.sha512).digest()
+    signature_b64 = b64url_encode(signature)
+
+    # 6. Final JWT
+    return f"{header_b64}.{payload_b64}.{signature_b64}"
+
+
+# === EXAMPLE ===
+payload_json = '{"user":"john","role":"admin"}'   # <-- put your JSON here
+secret = "supersecretkey"                        # <-- put your secret here
+
+jwt = create_jwt(payload_json, secret)
+print(jwt)
+___________________________________________________________________
+
+___________________________________________________________________
+import base64
+import urllib.parse
+import json
+import hmac
+import hashlib
+
+def b64url_encode(data: bytes) -> str:
+    return base64.urlsafe_b64encode(data).decode().rstrip("=")
+
+def create_jwt(payload_json_str, secret="your_secret_key"):
+    # 1. Fixed header
+    header = {"typ": "JWT", "alg": "HS512"}
+
+    # 2. Encode header (JSON → bytes → base64url)
+    header_b64 = b64url_encode(json.dumps(header).encode())
+
+    # 3. URL-encode your raw JSON string
+    url_encoded_payload = urllib.parse.quote(payload_json_str)
+
+    # 4. Base64url encode URL-encoded payload
+    payload_b64 = b64url_encode(url_encoded_payload.encode())
+
+    # 5. Create REAL HS512 signature
+    signing_input = f"{header_b64}.{payload_b64}".encode()
+    signature = hmac.new(secret.encode(), signing_input, hashlib.sha512).digest()
+    signature_b64 = b64url_encode(signature)
+
+    # 6. Final JWT
+    return f"{header_b64}.{payload_b64}.{signature_b64}"
+
+
+# === EXAMPLE ===
+payload_json = '{"user":"john","role":"admin"}'   # <-- put your JSON here
+secret = "supersecretkey"                        # <-- put your secret here
+
+jwt = create_jwt(payload_json, secret)
+print(jwt)
+___________________________________________________________________
+
+___________________________________________________________________
+>>> import base64
+... import json
+... import urllib.parse
+...
+... # Example JSON object (payload)
+... payload = {"user": "john", "role": "admin"}
+...
+... # URL-encode the JSON string
+... url_encoded_payload = urllib.parse.quote(json.dumps(payload))
+...
+... # Base64url encode the URL-encoded JSON
+... base64url_payload = base64.urlsafe_b64encode(url_encoded_payload.encode()).decode().rstrip("=")
+...
+... # Header (you can customize this, but here is an example)
+... header = {"alg": "HS256", "typ": "JWT"}
+...
+... # Base64url encode the header
+... base64url_header = base64.urlsafe_b64encode(json.dumps(header).encode()).decode().rstrip("=")
+...
+... # Signature (just for example purposes, this won't work without a real signing algorithm)
+... secret = "your_secret_key"
+... signature = base64.urlsafe_b64encode(secret.encode()).decode().rstrip("=")
+...
+... # Final JWT
+... jwt_token = f"{base64url_header}.{base64url_payload}.{signature}"
+...
+... print("JWT Token:", jwt_token)
+...
+>>> import base64
+... import json
+... import urllib.parse
+...
+... def create_jwt(payload_json, secret="your_secret_key", algorithm="HS256"):
+...     # Step 1: URL-encode the JSON string (to simulate URL-encoded JSON payload)
+...     url_encoded_payload = urllib.parse.quote(payload_json)
+...
+...     # Step 2: Base64url encode the URL-encoded JSON
+...     base64url_payload = base64.urlsafe_b64encode(url_encoded_payload.encode()).decode().rstrip("=")
+...
+...     # Step 3: Create the JWT Header (default is HS256)
+...     header = {"alg": algorithm, "typ": "JWT"}
+...     base64url_header = base64.urlsafe_b64encode(json.dumps(header).encode()).decode().rstrip("=")
+...
+...     # Step 4: (For demonstration purposes) Create a simple signature (HMAC or something else would go here)
+...     signature = base64.urlsafe_b64encode(secret.encode()).decode().rstrip("=")
+...
+...     # Step 5: Combine the header, payload, and signature into the final JWT
+...     jwt_token = f"{base64url_header}.{base64url_payload}.{signature}"
+...
+...     return jwt_token
+...
+...
+... def create_jwt(payload_json_str, secret="your_secret_key"):
+...     # 1. Fixed header
+...     header = {"typ": "JWT", "alg": "HS512"}
+...
+...     # 2. Encode header (JSON → bytes → base64url)
+...     header_b64 = b64url_encode(json.dumps(header).encode())
+...
+...     # 3. URL-encode your raw JSON string
+...     url_encoded_payload = urllib.parse.quote(payload_json_str)
+...
+...     # 4. Base64url encode URL-encoded payload
+...     payload_b64 = b64url_encode(url_encoded_payload.encode())
+...
+...     # 5. Create REAL HS512 signature
+...     signing_input = f"{header_b64}.{payload_b64}".encode()
+...     signature = hmac.new(secret.encode(), signing_input, hashlib.sha512).digest()
+...     signature_b64 = b64url_encode(signature)
+...
+...     # 6. Final JWT
+...     return f"{header_b64}.{payload_b64}.{signature_b64}"
+...
+
+... # === EXAMPLE ===
+... payload_json = '{"user":"john","role":"admin"}'   # <-- put your JSON here
+... secret = "supersecretkey"                        # <-- put your secret here
+...
+... jwt = create_jwt(payload_json, secret)
+... print(jwt)
+
+___________________________________________________________________
+
