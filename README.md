@@ -32,3 +32,4 @@ Some of them have mulitple games and the difficulty verries
 
 * Burp Suite
 * Cyberchef
+* python
