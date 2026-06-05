@@ -24,7 +24,6 @@ Some of them have mulitple games and the difficulty verries
 * https://connrad.itch.io/keeper-chaos
 * https://oozerush.com/
 * https://fluby.com/game/hextris/
-* https://lockpickup.itch.io/stack-merge
 * https://retroplayarena.com/leaderboard
 
 
