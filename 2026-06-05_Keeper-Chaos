@@ -1,0 +1,42 @@
+URL: https://connrad.itch.io/keeper-chaos
+
+
+1. Find the Post for submitting a score
+2. There are 4 important values in the request: X-Sw-Act-Dig, X-Sw-Act-Tmst, player_name and score
+3. X-Sw-Act-Dig is the md5(player_name+score+X-Sw-Act-Tmst) - in my example: md5(Jesrty69420349)=a0b645256f0ad869ddbd10b6ff170b3b
+4. so change the score and calculate the new md5 and resend the Post request (the X-Api-Key also have to be correct)
+
+
+Post request for submitting high score:
+
+POST /save_score HTTP/2
+Host: api.silentwolf.com
+Content-Length: 134
+Sec-Ch-Ua-Platform: "Windows"
+X-Sw-Act-Dig: a0b645256f0ad869ddbd10b6ff170b3b
+Sec-Ch-Ua: "Not-A.Brand";v="24", "Chromium";v="146"
+X-Sw-Game-Id: keeperchaos
+X-Api-Key: [[[I REMOVED MY X-Api-Key]]]
+Sec-Ch-Ua-Mobile: ?0
+Accept-Language: da-DK,da;q=0.9
+X-Sw-Godot-Version: 4.5-stable (official)
+X-Sw-Plugin-Version: 0.9.9
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Content-Type: application/json
+X-Sw-Act-Tmst: 349
+Accept: */*
+Origin: https://html-classic.itch.zone
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://html-classic.itch.zone/
+Accept-Encoding: gzip, deflate, br
+Priority: u=1, i
+
+{
+    game_id: "keeperchaos",
+    ldboard_name: "main",
+    player_name: "Jesrty",
+    score: 69420,
+    score_id: "56729990-7f97-4853-994b-caa44a4a4a4a"
+}
