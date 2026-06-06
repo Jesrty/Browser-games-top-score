@@ -15,16 +15,18 @@ Some of them have mulitple games and the difficulty verries
 * Many games      2025/--/--,    https://playmore.gg
 * Hit the clit    2025/--/--,    https://www.sinful.dk/games/hit-the-clit
 * polytrack       2025/--/--,    https://www.kodub.com/apps/polytrack   (only like top 10 done, not first place)
+* 
 
 
 ### List of games not looked at yet
 
-* Dial-Up Dash,                 https://www.nostalgiax.com/  (only local leaderboard)
-* block-puzzle-master           https://www.crazygames.com/game/block-puzzle-master
-* fruit-frenzy                  https://arcadedeck.net/play/fruit-frenzy
-* https://oozerush.com/
-* https://fluby.com/game/hextris/
-* https://retroplayarena.com/leaderboard
+* https://playloop.run/
+* https://aprell9.itch.io/whirlybird
+* https://g-bloxy.itch.io/color-pop
+* https://mambojambo150.itch.io/target-popper
+* https://gg-rank.itch.io/sky-stack
+* https://almadagames.itch.io/breath-of-feces
+* https://maurodot.itch.io/healthy-competition
 
 
 ### Tools used
