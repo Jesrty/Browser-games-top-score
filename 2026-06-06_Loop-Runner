@@ -1,0 +1,33 @@
+URL: https://playloop.run/
+
+1. this is very easy, just change the "score" and you can resend the post for your submission. 
+
+Post request for submitting high score:
+
+POST /rest/v1/scores HTTP/2
+Host: azaqjxovkewurgbecizs.supabase.co
+Content-Length: 63
+Sec-Ch-Ua-Platform: "Windows"
+Authorization: [[[I REMOVED MY Authorization]]]
+Accept-Language: da-DK,da;q=0.9
+Sec-Ch-Ua: "Not-A.Brand";v="24", "Chromium";v="146"
+Sec-Ch-Ua-Mobile: ?0
+Prefer: return=minimal
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Content-Type: application/json
+Apikey: [[[I REMOVED MY Apikey]]]
+Accept: */*
+Origin: https://playloop.run
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://playloop.run/
+Accept-Encoding: gzip, deflate, br
+Priority: u=1, i
+
+{
+    name: "Jesrty",
+    score: 6942069,
+    mode: "daily",
+    country: "DK"
+}
