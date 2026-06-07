@@ -21,7 +21,6 @@ Some of them have mulitple games and the difficulty verries
 
 ### List of games not looked at yet
 
-* https://aprell9.itch.io/whirlybird
 * https://g-bloxy.itch.io/color-pop
 * https://mambojambo150.itch.io/target-popper
 * https://gg-rank.itch.io/sky-stack
