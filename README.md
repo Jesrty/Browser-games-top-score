@@ -22,7 +22,6 @@ Some of them have mulitple games and the difficulty verries
 
 ### List of games not looked at yet
 
-* 
 * https://almadagames.itch.io/breath-of-feces
 * https://maurodot.itch.io/healthy-competition
 
