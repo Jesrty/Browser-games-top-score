@@ -24,6 +24,7 @@ Some of them have mulitple games and the difficulty verries
 
 * https://almadagames.itch.io/breath-of-feces
 * https://maurodot.itch.io/healthy-competition
+* https://hexagamehub.com/play/hexaflux.html
 
 
 ### Tools used
