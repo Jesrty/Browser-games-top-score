@@ -1,0 +1,32 @@
+URL: https://hexagamehub.com/play/hexaflux.html
+
+1. this is very easy, just change the "score" and you can resend the post, from your submission, if you change the name to an other game without space its the same request so you can easy get it for all games on the web page.
+
+
+Post request for submitting high score:
+
+POST /api/submit_score.php HTTP/2
+Host: hexagamehub.com
+Cookie: PHPSESSID=[[[I REMOVED MY PHPSESSID]]]; hgh_remember=[[[I REMOVED MY hgh_remember]]]
+Content-Length: 45
+Sec-Ch-Ua-Platform: "Windows"
+X-Csrf-Token: [[[I REMOVED MY X-Csrf-Token]]]
+Accept-Language: da-DK,da;q=0.9
+Sec-Ch-Ua: "Not-A.Brand";v="24", "Chromium";v="146"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: */*
+Origin: https://hexagamehub.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://hexagamehub.com/games/hexaflux/index.html
+Accept-Encoding: gzip, deflate, br
+Priority: u=1, i
+
+{
+    "slug": "HexBoard",
+    "score": 6942069,
+    "meta": {}
+}
