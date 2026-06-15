@@ -26,6 +26,13 @@ Some of them have mulitple games and the difficulty verries
 * https://almadagames.itch.io/breath-of-feces
 * https://maurodot.itch.io/healthy-competition
 
+* https://skystack.fun/
+* https://scoreithigh.com/games/perfect-heart
+* https://dyoxyne.itch.io/quanoid
+* https://justusgames.itch.io/virtua-target
+* https://mrlint01.itch.io/flash-recall
+* https://gg-rank.itch.io/last-swing
+
 
 ### Tools used
 
