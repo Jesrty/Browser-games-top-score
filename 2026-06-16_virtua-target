@@ -1,0 +1,34 @@
+URL: https://justusgames.itch.io/virtua-target
+
+
+1. This is very easy, just complete the game, find the "score" and change the value and resend the POST request.
+
+
+Post request for submitting high score:
+
+POST /post_new_score HTTP/2
+Host: api.silentwolf.com
+Content-Length: 158
+Sec-Ch-Ua-Platform: "Windows"
+Accept-Language: da-DK,da;q=0.9
+Sec-Ch-Ua: "Not-A.Brand";v="24", "Chromium";v="146"
+Content-Type: application/json, x-api-key: [[[I REMOVED MY x-api-key]]]
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: */*
+Origin: https://html-classic.itch.zone
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://html-classic.itch.zone/
+Accept-Encoding: gzip, deflate, br
+Priority: u=1, i
+
+{
+  "score_id":"8251a6ad-f160-4275-8ab1-d0ce019fc2d1",
+  "player_name":"Jesrty",
+  "game_id":"VirtuaTarget",
+  "game_version":"0.0.3",
+  "score":69420,
+  "ldboard_name":"main"
+}
