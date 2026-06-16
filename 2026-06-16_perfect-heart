@@ -7,7 +7,7 @@ Post request for submitting high score:
 
 POST /games/perfect-heart/scores.php HTTP/2
 Host: scoreithigh.com
-Cookie: _ga=GA1.1.1035931840.1781638178; _ga_9L9TKD7DT8=GS2.1.s1781638177$o1$g1$t1781638265$j60$l0$h0
+Cookie: [[[I REMOVED MY Cookie]]]
 Content-Length: 113
 Sec-Ch-Ua-Platform: "Windows"
 Accept-Language: da-DK,da;q=0.9
