@@ -5,6 +5,7 @@ Some of them have mulitple games and the difficulty verries
 
 ### List of games and date of compleasion 
 
+* last-swing,       2026-06-16,    https://gg-rank.itch.io/last-swing
 * virtua-target,    2026-06-16,    https://justusgames.itch.io/virtua-target
 * perfect-heart,    2026-06-16,    https://scoreithigh.com/games/perfect-heart
 * skystack,         2026-06-16,    https://skystack.fun/
@@ -31,7 +32,6 @@ Some of them have mulitple games and the difficulty verries
 ---
 * https://dyoxyne.itch.io/quanoid
 * https://mrlint01.itch.io/flash-recall
-* https://gg-rank.itch.io/last-swing
 
 
 ### Tools used
