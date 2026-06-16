@@ -5,6 +5,7 @@ Some of them have mulitple games and the difficulty verries
 
 ### List of games and date of compleasion 
 
+* perfect-heart,    2026-06-16,    https://scoreithigh.com/games/perfect-heart
 * skystack,         2026-06-16,    https://skystack.fun/
 * hexaflux & more,  2026-06-15,    https://hexagamehub.com/play/hexaflux.html
 * Sky-Stack,        2026-06-08,    https://gg-rank.itch.io/sky-stack
@@ -27,7 +28,6 @@ Some of them have mulitple games and the difficulty verries
 * https://almadagames.itch.io/breath-of-feces
 * https://maurodot.itch.io/healthy-competition
 ---
-* https://scoreithigh.com/games/perfect-heart
 * https://dyoxyne.itch.io/quanoid
 * https://justusgames.itch.io/virtua-target
 * https://mrlint01.itch.io/flash-recall
