@@ -5,6 +5,7 @@ Some of them have mulitple games and the difficulty verries
 
 ### List of games and date of compleasion 
 
+* virtua-target,    2026-06-16,    https://justusgames.itch.io/virtua-target
 * perfect-heart,    2026-06-16,    https://scoreithigh.com/games/perfect-heart
 * skystack,         2026-06-16,    https://skystack.fun/
 * hexaflux & more,  2026-06-15,    https://hexagamehub.com/play/hexaflux.html
@@ -29,7 +30,6 @@ Some of them have mulitple games and the difficulty verries
 * https://maurodot.itch.io/healthy-competition
 ---
 * https://dyoxyne.itch.io/quanoid
-* https://justusgames.itch.io/virtua-target
 * https://mrlint01.itch.io/flash-recall
 * https://gg-rank.itch.io/last-swing
 
