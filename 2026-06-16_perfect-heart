@@ -1,0 +1,33 @@
+URL: https://scoreithigh.com/games/perfect-heart
+
+1. This is very easy, just complete the game, find the "score" and change it and resend the POST request.
+2. note you can't go above 100 and its a bit slow to update, it updates localy first
+
+Post request for submitting high score:
+
+POST /games/perfect-heart/scores.php HTTP/2
+Host: scoreithigh.com
+Cookie: _ga=GA1.1.1035931840.1781638178; _ga_9L9TKD7DT8=GS2.1.s1781638177$o1$g1$t1781638265$j60$l0$h0
+Content-Length: 113
+Sec-Ch-Ua-Platform: "Windows"
+Accept-Language: da-DK,da;q=0.9
+Sec-Ch-Ua: "Not-A.Brand";v="24", "Chromium";v="146"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: */*
+Origin: https://scoreithigh.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://scoreithigh.com/games/perfect-heart/embed
+Accept-Encoding: gzip, deflate, br
+Priority: u=1, i
+
+{
+  "id":"u1781638355955",
+  "name":"Jesrty",
+  "score":100,
+  "userId":"7270e297-46e9-46e1-bdd6-3f1577c7c736",
+  "drawMs":7342
+}
