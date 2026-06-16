@@ -1,0 +1,50 @@
+URL: https://skystack.fun/
+
+1. The token is a sha256 and its the first time i couldn't just guess how it was made. :o
+2. so i inspected the code and searched for token and here is how its done:
+          const ts = Date.now();
+          const secret = 'skystack_v1_2026';
+          const raw = secret + scoreVal + blocksCount + comboVal + ts;
+          const msgBuf = new TextEncoder().encode(raw);
+          const hashBuf = await crypto.subtle.digest('SHA-256', msgBuf);
+          const token = Array.from(new Uint8Array(hashBuf)).map(b => b.toString(16).padStart(2,'0')).join('');
+          const r = await fetch(`${CFG.API_BASE}/api/score.php`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ name, score: scoreVal, blocks: blocksCount, combo: comboVal, daily, token, ts }),
+          });
+3. in other words to make the post request work take the sha256("skystack_v1_2026"+score+blocks+combo+ts) and use that for the token. in my case sha256(skystack_v1_202699969691781629069682)=d50423ec049d27af56fe9e536bea48f0466341560217f5b40070f6d10ebd7cce
+4. just select the numbers you like and resend the post request with the updated numbers and token
+5. note that there is some verification on the number of blocks/combos made and if i could give the score you want. so if your get the repsonse: "error":"Score exceeds maximum possible" just encrease the amount of blocks/combs or lower the score :)
+
+
+Post request for submitting high score:
+
+
+POST /api/score.php HTTP/2
+Host: skystack.fun
+Content-Length: 160
+Sec-Ch-Ua-Platform: "Windows"
+Accept-Language: da-DK,da;q=0.9
+Sec-Ch-Ua: "Not-A.Brand";v="24", "Chromium";v="146"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: */*
+Origin: https://skystack.fun
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://skystack.fun/
+Accept-Encoding: gzip, deflate, br
+Priority: u=1, i
+
+{
+    "name": "Jesrty",
+    "score": 999,
+    "blocks": 69,
+    "combo": 69,
+    "daily": false,
+    "token": "d50423ec049d27af56fe9e536bea48f0466341560217f5b40070f6d10ebd7cce",
+    "ts": 1781629069682
+}
