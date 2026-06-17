@@ -27,11 +27,11 @@ Some of them have mulitple games and the difficulty verries
 
 ### List of games not looked at yet
 
-* https://almadagames.itch.io/breath-of-feces
-* https://maurodot.itch.io/healthy-competition
----
-* https://dyoxyne.itch.io/quanoid
-* https://mrlint01.itch.io/flash-recall
+* https://nikolympiagames.com/up-or-lose
+* https://hostsimple.io/play
+* https://darox771.itch.io/mini-disc-golf
+* https://ggrank.xyz/en/leaderboard?game=fart-jetpack multiple games "https://ggrank.xyz/en/leaderboard?game=sky-stack"
+* https://arcadedeck.net/play/skyfall være på website før
 
 
 ### Tools used
