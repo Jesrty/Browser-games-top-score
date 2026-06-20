@@ -5,6 +5,7 @@ Some of them have mulitple games and the difficulty verries
 
 ### List of games and date of compleasion 
 
+* up-or-lose,       2026-06-21,    https://nikolympiagames.com/up-or-lose
 * last-swing,       2026-06-16,    https://gg-rank.itch.io/last-swing
 * virtua-target,    2026-06-16,    https://justusgames.itch.io/virtua-target
 * perfect-heart,    2026-06-16,    https://scoreithigh.com/games/perfect-heart
@@ -27,7 +28,6 @@ Some of them have mulitple games and the difficulty verries
 
 ### List of games not looked at yet
 
-* https://nikolympiagames.com/up-or-lose
 * https://hostsimple.io/play
 * https://darox771.itch.io/mini-disc-golf
 * https://ggrank.xyz/en/leaderboard?game=fart-jetpack multiple games "https://ggrank.xyz/en/leaderboard?game=sky-stack"
