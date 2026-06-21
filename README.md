@@ -5,6 +5,7 @@ Some of them have mulitple games and the difficulty verries
 
 ### List of games and date of compleasion 
 
+* fart-jetpack,     2026-06-21,    https://ggrank.xyz/en/game/fart-jetpack/
 * up-or-lose,       2026-06-21,    https://nikolympiagames.com/up-or-lose
 * last-swing,       2026-06-16,    https://gg-rank.itch.io/last-swing
 * virtua-target,    2026-06-16,    https://justusgames.itch.io/virtua-target
@@ -30,7 +31,6 @@ Some of them have mulitple games and the difficulty verries
 
 * https://hostsimple.io/play
 * https://darox771.itch.io/mini-disc-golf
-* https://ggrank.xyz/en/leaderboard?game=fart-jetpack multiple games "https://ggrank.xyz/en/leaderboard?game=sky-stack"
 * https://arcadedeck.net/play/skyfall være på website før
 
 
