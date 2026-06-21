@@ -1,0 +1,66 @@
+URL: https://ggrank.xyz/en/game/fart-jetpack/
+URL to see leaderbaord: https://ggrank.xyz/en/leaderboard/?game=fart-jetpack
+
+1. This is easy, just find the post request, find the "___data__" and "score":{"integerValue":"420"} - found it most easy just using intercept before submiting. 
+2. you can url-decode the data if you want to better understand it, but i just search for the score value and it was easy enough to find. 
+3. (this is the same as 2026-06-16_last-swing and 2026-06-21_up-or-lose but a different game and a different hub)
+
+url decoded data:
+{
+    streamToken: "EAEZEGhCAoH0tbU=",
+    writes: [
+        {
+            update: {
+                name: "projects/game-ranking-b951c/databases/(default)/documents/scores/o3r9x6jwjbaAgUwIHkOh",
+                fields: {
+                    userName: {
+                        stringValue: "Jesrty"
+                    },
+                    gameId: {
+                        stringValue: "fart-jetpack"
+                    },
+                    score: {
+                        integerValue: "420"
+                    },
+                    countryCode: {
+                        stringValue: "DK"
+                    }
+                }
+            },
+            updateTransforms: [
+                {
+                    fieldPath: "playedAt",
+                    setToServerValue: "REQUEST_TIME"
+                }
+            ],
+            currentDocument: {
+                exists: false
+            }
+        }
+    ]
+}
+
+
+Post request for submitting high score:
+
+POST [[[I REMOVED MY the url]]] HTTP/2
+Host: firestore.googleapis.com
+Content-Length: 663
+Sec-Ch-Ua-Platform: "Windows"
+Accept-Language: da-DK,da;q=0.9
+Sec-Ch-Ua: "Not-A.Brand";v="24", "Chromium";v="146"
+Content-Type: application/x-www-form-urlencoded
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: */*
+Origin: https://ggrank.xyz
+X-Client-Data: CMz0ygE=
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Sec-Fetch-Storage-Access: active
+Referer: https://ggrank.xyz/
+Accept-Encoding: gzip, deflate, br
+Priority: u=1, i
+
+count=1&ofs=2&req0___data__=%7B%22streamToken%22%3A%22EAEZEGhCAoH0tbU%3D%22%2C%22writes%22%3A%5B%7B%22update%22%3A%7B%22name%22%3A%22projects%2Fgame-ranking-b951c%2Fdatabases%2F(default)%2Fdocuments%2Fscores%2Fo3r9x6jwjbaAgUwIHkOh%22%2C%22fields%22%3A%7B%22userName%22%3A%7B%22stringValue%22%3A%22Jesrty%22%7D%2C%22gameId%22%3A%7B%22stringValue%22%3A%22fart-jetpack%22%7D%2C%22score%22%3A%7B%22integerValue%22%3A%22420%22%7D%2C%22countryCode%22%3A%7B%22stringValue%22%3A%22DK%22%7D%7D%7D%2C%22updateTransforms%22%3A%5B%7B%22fieldPath%22%3A%22playedAt%22%2C%22setToServerValue%22%3A%22REQUEST_TIME%22%7D%5D%2C%22currentDocument%22%3A%7B%22exists%22%3Afalse%7D%7D%5D%7D
