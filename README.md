@@ -5,6 +5,7 @@ Some of them have mulitple games and the difficulty verries
 
 ### List of games and date of compleasion 
 
+* neon-stack,       2026-06-26,    https://arcadedeck.net/play/neon-stack
 * fart-jetpack,     2026-06-21,    https://ggrank.xyz/en/game/fart-jetpack/
 * up-or-lose,       2026-06-21,    https://nikolympiagames.com/up-or-lose
 * last-swing,       2026-06-16,    https://gg-rank.itch.io/last-swing
@@ -31,7 +32,7 @@ Some of them have mulitple games and the difficulty verries
 
 * https://hostsimple.io/play
 * https://darox771.itch.io/mini-disc-golf
-* https://arcadedeck.net/play/skyfall være på website før
+
 
 
 ### Tools used
